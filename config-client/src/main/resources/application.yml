@@ -9,7 +9,12 @@ spring:
         name: config-client
     cloud:
         config:
+            label: master
             discovery:
                 enabled: true
                 serviceId: config-server
             profile: dev
+
+management:
+  security:
+    enabled: false
