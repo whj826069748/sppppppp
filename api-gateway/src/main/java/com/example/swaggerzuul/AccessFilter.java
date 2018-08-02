@@ -1,4 +1,4 @@
-package com.example.apigateway;
+package com.example.swaggerzuul;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;

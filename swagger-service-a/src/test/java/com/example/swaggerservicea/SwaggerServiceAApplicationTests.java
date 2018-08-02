@@ -1,4 +1,4 @@
-package com.example.apigateway;
+package com.example.swaggerservicea;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ApiGatewayApplicationTests {
+public class SwaggerServiceAApplicationTests {
 
 	@Test
 	public void contextLoads() {

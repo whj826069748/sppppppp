@@ -1,4 +1,4 @@
-package com.example.apigateway;
+package com.example.swaggerzuul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
