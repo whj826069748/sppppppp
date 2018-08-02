@@ -1,4 +1,4 @@
-package com.example.eurekaconsumerribbon;
+package com.example.eurekaconsumerribbonhystrix;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

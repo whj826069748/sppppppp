@@ -1,4 +1,4 @@
-package com.example.eurekaconsumerribbon;
+package com.example.eurekaconsumerribbonhystrix;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

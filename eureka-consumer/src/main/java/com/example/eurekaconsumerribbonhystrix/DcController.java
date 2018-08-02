@@ -1,4 +1,4 @@
-package com.example.eurekaconsumerribbon;
+package com.example.eurekaconsumerribbonhystrix;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -11,10 +11,15 @@ import org.springframework.web.client.RestTemplate;
 public class DcController {
 
     @Autowired
+    LoadBalancerClient loadBalancerClient;
+    @Autowired
     RestTemplate restTemplate;
 
     @GetMapping("/consumer")
     public String dc() {
-        return restTemplate.getForObject("http://eureka-client/dc", String.class);
+        ServiceInstance serviceInstance = loadBalancerClient.choose("eureka-client");
+        String url = "http://" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + "/dc";
+        System.out.println(url);
+        return url + restTemplate.getForObject(url, String.class);
     }
 }

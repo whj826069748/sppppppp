@@ -1,0 +1,9 @@
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:1001/eureka/
+server:
+    port: 2202
+spring:
+    application:
+        name: eureka-consumer-ribbon-hystrix
